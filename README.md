@@ -1,5 +1,7 @@
 # ROS_self_navigating_bot
 
+Youtube demo: https://www.youtube.com/watch?v=pKedwtdQNO4
+
 This is a demo of a self-navigating robot with global and local map planning using Rviz, gazebo and ROS.
 
 
