@@ -2,17 +2,18 @@
 
 Youtube demo: https://www.youtube.com/watch?v=pKedwtdQNO4
 
-This is a demo of a self-navigating robot with global and local map planning using Rviz, gazebo and ROS.
+![0](https://github.com/BouzoulasDimitrios/ROS_self_navigating_bot/blob/main/images/bot_pic.PNG)
 
+This is a demo of a self-navigating robot with global and local map planning using Rviz, gazebo and ROS.
 
 The commands required to run the package are the following:
 
-![](images/commands%20required.PNG)
+![1](images/commands%20required.PNG)
 
 
 Your Rviz should look like this:
 
-![](images/rviz.PNG)
+![2](images/rviz.PNG)
 
 
 The little robot you see is a Differential Drive robot designed in Fushion 360 and transformed into a URDF to be used in gazebo.
@@ -32,3 +33,11 @@ This is demonstrated well if an object is placed in front of it(through gazebo) 
 set, it will automatically change it's local path in order to avoid the obstacle and reach it's goal. The aforementioned is possible as the robot carries a laser scanner that can 
 
 give real time feedback from it's soroundings and as a result it can use and share that information throught the /laser/scan topic in order to plan a new path.  
+
+gazebo: 
+
+![3](https://github.com/BouzoulasDimitrios/ROS_self_navigating_bot/blob/main/images/gazebo_room.PNG)
+
+rviz:
+
+![3](https://github.com/BouzoulasDimitrios/ROS_self_navigating_bot/blob/main/images/rviz_room.PNG)
