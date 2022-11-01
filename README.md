@@ -2,14 +2,23 @@
 
 Youtube demo: https://www.youtube.com/watch?v=pKedwtdQNO4
 
-![0](https://github.com/BouzoulasDimitrios/ROS_self_navigating_bot/blob/main/images/bot_pic.PNG)
+![0](images/bot_pic.PNG)
 
 This is a demo of a self-navigating robot with global and local map planning using Rviz, gazebo and ROS.
 
-The commands required to run the package are the following:
+In order to launch the robot in the simulator:
+    
+    /your_ros_ws/src/rmp_bot_description $ roslaunch rmp_bot_description gazebo.launch
 
-![1](images/commands%20required.PNG)
+    /your_ros_ws/src/rmp_bot_description $ roslaunch rmp_bot_description display.launch
 
+    /your_ros_ws/src/rmp_bot_description/launch $ rosrun map_server map_server rmp_world.yaml
+
+    /your_ros_ws/src/rmp_bot_description $ roslaunch  rmp_bot_description rmp_amcl.launch
+
+    /your_ros_ws/src/rmp_bot_description/launch $ roslaunch  rmp_bot_description movebase.launch
+
+<!-- ![1](images/commands%20required.PNG) -->
 
 Your Rviz should look like this:
 
@@ -36,8 +45,8 @@ give real time feedback from it's soroundings and as a result it can use and sha
 
 gazebo: 
 
-![3](https://github.com/BouzoulasDimitrios/ROS_self_navigating_bot/blob/main/images/gazebo_room.PNG)
+![3](images/gazebo_room.PNG)
 
 rviz:
 
-![3](https://github.com/BouzoulasDimitrios/ROS_self_navigating_bot/blob/main/images/rviz_room.PNG)
+![3](images/rviz_room.PNG)
